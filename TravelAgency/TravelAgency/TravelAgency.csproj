@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\ProfilePicture.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Resource Include="Resources\Images\ThreeLineMenu.jpg"></Resource>
+	  <Resource Include="Resources\Images\ArrowUpRight.png"></Resource>
+	  <Resource Include="Resources\Images\LeftArrow.png"></Resource>
+	  <Resource Include="Resources\Images\RightArrow.png"></Resource>
+	  <Resource Include="Resources\Images\HelpImage.png"></Resource>
+	  <Resource Include="Resources\Images\IconBell.png"></Resource>
+	  <Resource Include="Resources\Images\home.png"></Resource>
+	  <Resource Include="Resources\Images\back.png"></Resource>
+      <Resource Include="Resources\Images\ProfilePicture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
